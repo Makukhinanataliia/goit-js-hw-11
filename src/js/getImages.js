@@ -2,7 +2,7 @@ import { refs } from './refs';
 
 export function getImages(userInput) {
   const searchParams = new URLSearchParams({
-    key: '42120436-8d9fae2eb5c6f9f50c8ac4324',
+    key: '42406888-248cc758d404d4e51dcff55ab',
     q: `${userInput}`,
     image_type: 'photo',
     orientation: 'horizontal',

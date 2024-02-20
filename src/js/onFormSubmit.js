@@ -10,7 +10,7 @@ export function onFormSubmit(event) {
   showLoader();
   refs.imageContainer.innerHTML = '';
   const userInput = event.target.elements.query.value;
-  getImagesByRequest(userInput)
+  getImages(userInput)
     .then(renderImages)
     .catch(showError)
     .finally(hideLoader);
