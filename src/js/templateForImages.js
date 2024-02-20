@@ -1,6 +1,6 @@
-export function tamplateForImages(
+export function templateForImages(
   largeImageURL,
-  webormatURL,
+  webwormURL,
   tags,
   likes,
   views,
@@ -9,7 +9,7 @@ export function tamplateForImages(
 ) {
   return `<li class="gallery-item">
             <a class="gallery-link" href="${largeImageURL}">
-              <img class="gallery-image" src="${webormatURL}" alt="${tags}" />
+              <img class="gallery-image" src="${webwormURL}" alt="${tags}" />
             </a>
                <ul class="list-content">      
                   <li class="list-text"><p>Likes <span>${likes}</span></p></li>
