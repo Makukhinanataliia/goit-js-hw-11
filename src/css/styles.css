@@ -145,7 +145,7 @@ button:hover {
   animation: bblFadInOut 1.8s infinite ease-in-out;
 }
 .loader {
-  color: #FFF;
+  color: #067e89;
   font-size: 7px;
   position: relative;
   text-indent: -9999em;
