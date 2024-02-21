@@ -1,11 +1,15 @@
 import { refs } from './refs';
 
 export function getImages(userInput) {
-  const API_KEY = '42406888-248cc758d404d4e51dcff55ab';
-  const BASE_URL = 'https://pixabay.com/api/';
-  const parameters = `q=${userInput}&image_type=photo&orientation=horizontal&safesearch=true`;
-  const URL = `${BASE_URL}?key=${API_KEY}&${parameters}`;
-
+  const searchParams = new URLSearchParams({
+    key: '42406888-248cc758d404d4e51dcff55ab',
+    q: `${userInput}`,
+    image_type: 'photo',
+    orientation: 'horizontal',
+    safesearch: true,
+  });
+  const url = `https://pixabay.com/api/?${searchParams}`;
+  
   return fetch(url).then(response => {
     if (!response.ok) {
       throw new Error(response.status);
